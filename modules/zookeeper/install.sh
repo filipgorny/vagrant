@@ -8,5 +8,5 @@ rm -Rf /opt/zookeeper/zookeeper-*/
 mv /opt/zookeeper/conf/zoo_sample.cfg /opt/zookeeper/conf/zoo.cfg
 cp /var/vagrant/vagrant/vagrant/modules/zookeeper/init.d.template /etc/init.d/zookeeper
 chmod +x /etc/init.d/zookeeper
-update-rc.d zookeeper defaults
+update-rc.d zookeeper defaults 98
 service zookeeper start

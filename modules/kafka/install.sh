@@ -4,5 +4,5 @@ mkdir -p /opt/
 mkdir -p /opt/kafka && cd /opt/kafka
 tar xfvz /tmp/kafka.tgz
 cp /var/vagrant/vagrant/modules/kafka/init.d.template /etc/init.d/
-update-rc.d kafka defaults
+update-rc.d kafka defaults 99
 service kafka start
