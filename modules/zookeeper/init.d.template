@@ -1,4 +1,3 @@
-DAEMON_PATH=/opt/zookeeper/bin
 DAEMON_NAME=zookeeper
 # Check that networking is up.
 #[ ${NETWORKING} = "no" ] && exit 0
@@ -10,7 +9,7 @@ case "$1" in
   start)
         # Start daemon.
         echo "Starting $DAEMON_NAME";
-        nohup $DAEMON_PATH/zkServer.sh
+        nohup /opt/zookeeper/bin/zkServer.sh start
         ;;
   stop)
         # Stop daemons.

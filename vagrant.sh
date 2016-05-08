@@ -19,5 +19,5 @@ if [ ! -f /usr/sbin/composer ]; then
 fi
 
 while read p; do
-  source /vagrant/modules/$p/install.sh
+  source /var/vagrant/vagrant/modules/$p/install.sh
 done </vagrant/modules_enabled
